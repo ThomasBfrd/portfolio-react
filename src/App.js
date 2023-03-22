@@ -47,7 +47,7 @@ const navbar = [
   return (
       <>
         <header className="navbar">
-          <Link to="/accueil">
+          <Link to="/">
             <h1 className="textHover">
             <div className='prenom'></div>
             <div className='nom'></div>
@@ -67,7 +67,7 @@ const navbar = [
           </button>
         </header>
         <Routes>
-          <Route path="/accueil" element={<Accueil />} />
+          <Route path="/" element={<Accueil />} />
           <Route path="/videos" element={<Videos />} />
           <Route path="/musiques" element={<Musiques />} />
           <Route path="/coding" element={<Coding />} />
