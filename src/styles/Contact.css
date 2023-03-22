@@ -1,0 +1,508 @@
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --clr: #e4e9ec;
+    --outline: 2px solid #e4e9ec;
+    --outlineClr : #e4e9ec;
+    --bkg : linear-gradient(#417d8c, #4c5b6e);
+}
+
+
+body {
+    font-family: 'Albert Sans', sans-serif;
+    color:rgb(255, 246, 246);
+    background: var(--bkg);
+    height: 100%;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.allContentContact {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 80px - 80px);
+    width: 100%;
+}
+
+.perso-infos {
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    border: solid 1px white;
+    height: 500px;
+    overflow: auto;
+}
+
+.info-tel, .info-mail, .info-lieu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 20px 10px;
+    margin-top: 30px;
+    margin-left: 20px;
+    word-break: normal;
+}
+
+.titre-info {
+   flex-basis: 50%;
+   margin-right: 30px;
+   font-size: 1rem;
+}
+
+.picto {
+    flex-basis: 15%;
+    width: 50px;
+}
+
+.info {
+    flex-basis: 100%;
+    padding: 0 47px;
+    line-height: 0%;
+    font-size: 1rem;
+    font-weight: 300;
+    transition: all 0.3s ease-in-out
+}
+
+.info:hover {
+    font-weight: 700;
+    color: greenyellow;
+}
+
+
+.picto svg, .picto path {
+    transform: scale(0.9);
+    padding-bottom: 10px;
+}
+
+.perso-infos .socials {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-right: 20px;
+    margin-top: 50px;
+}
+
+.perso-infos .socials img {
+    filter: invert();
+    height: 40px;
+    width: 40px;
+}
+
+.perso-infos .socials img:hover {
+    filter:invert(74%) sepia(48%) saturate(617%) hue-rotate(37deg) brightness(108%) contrast(113%);
+}
+
+.form-card {
+    width: 50vw;
+    height: 500px;
+    background-color: white;
+    display: flex;
+}
+
+.form-left {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    padding: 25px 15px;
+    width: 500px;
+}
+
+.form-left h1 {
+    margin-left: 15px;
+    font-size: 2rem;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px 15px;
+    width: 420px;
+    height: 500px;
+  overflow: auto;
+  position: relative;
+}
+
+input {
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+    background-color: white;
+    border-bottom: solid #bdbdbd 2px;
+    padding: 10px 10px;
+}
+
+input:hover, textarea:hover {
+    border-bottom:  solid black 2px;
+}
+
+textarea {
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+    background-color: white;
+    border-bottom: solid #bdbdbd 2px;
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 80px;
+    height: 80px;
+    width: 100%;
+    font-family: 'Noto Sans', sans-serif;
+    padding-left: 10px;
+}
+
+textarea::placeholder {
+    line-height: 30px;
+}
+
+.cta {
+    background-color: white;
+    padding: 15px 20px;
+    font-family: 'Noto Sans', sans-serif;
+    transition: all 0.2s ease-out;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 1.05rem;
+}
+
+input, textarea {
+    font-size: 1.05rem;
+}
+
+.cta:hover {
+    background-color: black;
+    color: white;
+}
+
+.form-right {
+    width: 300px;
+}
+
+.form-right img {
+    width: 100%;
+    height: 100%;
+    object-fit:fill;
+}
+
+.form-titre {
+    transition: all 0.3s ease-in-out;
+    font-weight: 700;
+    letter-spacing: 0em;
+}
+
+.form-card h1 {
+    font-size: 1.8rem;
+}
+
+.form-titre:hover {
+    font-weight: 900;
+    letter-spacing: 0.1em;
+    color: greenyellow;
+}
+
+
+
+.keyword {
+    font-weight: bold;
+    position: relative;
+}
+
+.keyword::after, .bento::after {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 0;
+    height: 2px;
+    right: 0;
+    margin-top : 1px;
+    background-color: var(--outlineClr);
+    transition: width 0.3s ease-in;
+    -webkit-transition: width 0.3s ease-in;
+}
+
+.keyword:hover::after, a:hover .bento::after {
+    width: 100%;
+    left: 0;
+}
+
+@media only screen and (max-width: 1024px) {
+    .allContentContact {
+        width: 95vw;
+        margin: 0 auto;
+    }
+    .perso-infos {
+        width: 30vw;
+        height: 400px;
+    }
+    .info-lieu, .info-mail, .info-lieu {
+        padding: 20px 10px;
+        width: 100%;
+        margin-top: 0px;
+        margin-left: 20px;
+    }
+    .perso-infos .socials {
+        gap: 30px;
+        margin-right: 20px;
+        margin-top: 34px;
+    }
+    
+    .perso-infos .socials img {
+        height: 40px;
+        width: 40px;
+    }
+    .form-card {
+        width: 40vw;
+        height: 400px;
+    }
+    
+    .form-left {
+        padding: 15px 15px;
+        width: 100%;
+    }
+    
+    .form-left h1 {
+        margin-left: 15px;
+        font-size: 1.5rem;
+    }
+    .form-titre {
+        font-size: 1.7rem;
+        letter-spacing: 0em;
+    }
+    
+    .form-right {
+        width: 100%;
+    }
+    .contact-form {
+        gap: 10px;
+        padding: 10px 15px;
+        width: 100%;
+        height: 400px;
+    }
+    textarea {
+        min-height: 50px;
+        height: 50px;
+        width: 100%;
+    }
+    .cta {
+        padding: 20px 20px;
+        margin-top: 20px;
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .allContentContact {
+        width: 100vw;
+        margin: 0 auto;
+        flex-direction: column;
+    }
+
+    .perso-infos {
+        width: 550px;
+        height: 210px;
+        overflow: hidden;
+    }
+    
+    .info-tel, .info-mail, .info-lieu {
+        align-items: center;
+        gap: 0px;
+        padding: 0px 0px;
+        margin: 0;
+    }
+    
+    .titre-info {
+       flex: 1;
+       margin: 0px;
+       font-size: 0.9rem;
+    }
+    
+    .picto {
+        flex: 0;
+        width: 50px;
+        padding: 0;
+        margin: 0;
+   }
+    
+    .info {
+        flex: 1;
+        text-align: end;
+        padding-right: 10px;
+    }
+
+    .picto svg, .picto path {
+        transform: scale(0.8);
+        padding-bottom: 0px;
+    }
+    .perso-infos .socials {
+        gap: 40px;
+        margin-right: 0px;
+        margin-top: 10px;
+    }
+
+    .perso-infos .socials img {
+        height: 30px;
+        width: 30px;
+    }
+    
+    .form-card {
+        width: 550px;
+        height: 400px;
+    }
+    
+    .form-left {
+        padding: 15px 15px;
+        width: 100%;
+    }
+    
+    .form-left h1 {
+        margin-left: 15px;
+        font-size: 1.5rem;
+    }
+    .form-titre {
+        font-size: 1.7rem;
+        letter-spacing: 0em;
+    }
+    
+    .form-right {
+        width: 60%;
+    }
+    .contact-form {
+        gap: 10px;
+        padding: 10px 15px;
+        width: 100%;
+        height: 400px;
+    }
+    textarea {
+        min-height: 50px;
+        height: 50px;
+        width: 100%;
+    }
+    .cta {
+        padding: 20px 20px;
+        margin-top: 20px;
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .allContentContact {
+        height: calc(100vh - 80px - 80px);
+        width: 100%;
+        margin: 0 auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .perso-infos {
+        width: 320px;
+        height: 210px;
+        overflow: hidden;
+    }
+    
+    .info-tel, .info-mail, .info-lieu {
+        align-items: center;
+        gap: 0px;
+        padding: 0px 0px;
+        margin: 0;
+    }
+    
+    .titre-info {
+       flex: 4;
+       margin: 0px;
+       font-size: 0.7rem;
+    }
+    
+    .picto {
+        flex: 0;
+        width: 40px;
+        padding: 0;
+        padding-top: 5px;
+        margin: 0;
+   }
+    
+    .info {
+        flex: 3;
+        text-align: end;
+        padding-right: 10px;
+        font-size: 0.8rem;
+    }
+
+    .picto svg, .picto path {
+        transform: scale(0.65);
+        padding-bottom: 0px;
+    }
+    .perso-infos .socials {
+        gap: 40px;
+        margin-right: 0px;
+        margin-top: 0px;
+    }
+
+    .perso-infos .socials img {
+        height: 25px;
+        width: 25px;
+    }
+    
+    .form-card {
+        width: 320px;
+        height: 400px;
+    }
+    
+    .form-left {
+        padding: 15px 15px;
+        width: 100%;
+    }
+    
+    .form-left h1 {
+        margin-left: 15px;
+        font-size: 1.5rem;
+    }
+    .form-titre {
+        font-size: 1.7rem;
+        letter-spacing: 0em;
+    }
+    
+    .form-right {
+        width: 0%;
+    }
+    .contact-form {
+        gap: 10px;
+        padding: 10px 15px;
+        width: 100%;
+        height: 400px;
+    }
+    textarea {
+        min-height: 50px;
+        height: 50px;
+        width: 100%;
+    }
+    .cta {
+        padding: 20px 20px;
+        margin-top: 20px;
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+
+}
+
+
+

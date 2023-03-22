@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800&display=swap');
+
+
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --clr: #e4e9ec;
+    --outline: 2px solid #e4e9ec;
+    --outlineClr : #e4e9ec;
+    --bkg : linear-gradient(#417d8c, #4c5b6e);
+}
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    color:rgb(255, 246, 246);
+    background: var(--bkg);
+    height: 100%;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.allContentCoding {
+    min-height: calc(100vh - 80px - 80px);
+    word-break: normal;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 95%;
+}
+
+.keyword {
+    font-weight: bold;
+    position: relative;
+}
+
+.keyword::after, .bento::after {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 0;
+    height: 2px;
+    right: 0;
+    margin-top : 1px;
+    background-color: var(--outlineClr);
+    transition: width 0.3s ease-in;
+    -webkit-transition: width 0.3s ease-in;
+}
+
+.keyword:hover::after, a:hover .bento::after {
+    width: 100%;
+    left: 0;
+}
