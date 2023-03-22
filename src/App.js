@@ -5,7 +5,7 @@ import Videos from './components/Videos'
 import Contact from './components/Contact'
 import { useEffect } from 'react'
 import { useRef } from 'react'
-import {Routes, Route } from 'react-router-dom'
+import {Routes, Route, Link } from 'react-router-dom'
 import { FaBars, FaTimes } from 'react-icons/fa'
 import './App.css';
 
@@ -56,7 +56,7 @@ const navbar = [
           <nav ref={navRef} className="nav">
             <ul>
               <li className="nav-btn"><a onClick={showNavbar} href="/">ACCUEIL</a></li>
-              {navbar.map((nav) => <li key={nav.url}> <a href={nav.url} onClick={showNavbar}>{nav.title}</a> </li>)}
+              {navbar.map((nav) => <li key={nav.url}> <Link to={nav.url} onClick={showNavbar}>{nav.title}</Link> </li>)}
             </ul>
             <button className="nav-btn nav-close-btn" onClick={showNavbar}>
               <FaTimes />
