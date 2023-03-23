@@ -83,8 +83,8 @@
 body {
     font-family: 'Noto Sans', sans-serif;
     color:rgb(255, 246, 246);
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
@@ -95,7 +95,7 @@ body::-webkit-scrollbar {
 
 .allContentAccueil {
     height: calc(100vh - 80px - 80px);
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -244,9 +244,9 @@ footer a:hover .bento::after {
 
 .round-button {
   left: -600px;
-  top: 300px;
-  width: 80px;
-  height: 80px;
+  top: 270px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
   background-color: #ccc;
   position: relative;
@@ -260,7 +260,7 @@ footer a:hover .bento::after {
 
 .round-button img {
   width: 100px;
-  height: 120px;
+  height: 105px;
   object-fit: cover;
   display: block;
   opacity: 1;
@@ -475,7 +475,7 @@ footer p, footer a {
   gap: 20px;
 }
 .containerAccueil .bio {
-    width: 90vw;
+    width: 90%;
     padding: 10px 10px;
     text-align: center;
 }
@@ -492,6 +492,8 @@ footer {
 footer p, footer a {
   margin: 0 10px;
 }
+
+
 .sticker {
   display: none;
 }
