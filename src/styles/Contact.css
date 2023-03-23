@@ -22,6 +22,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     height: 100%;
+    width: 100%;
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
@@ -41,7 +42,7 @@ body::-webkit-scrollbar {
 }
 
 .perso-infos {
-    width: 25vw;
+    width: 25%;
     display: flex;
     flex-direction: column;
     border: solid 1px white;
@@ -111,7 +112,7 @@ body::-webkit-scrollbar {
 }
 
 .form-card {
-    width: 50vw;
+    width: 50%;
     height: 500px;
     background-color: white;
     display: flex;
@@ -247,22 +248,33 @@ input, textarea {
 
 @media only screen and (max-width: 1024px) {
     .allContentContact {
-        width: 95vw;
+        width: 100%;
         margin: 0 auto;
     }
     .perso-infos {
-        width: 30vw;
+        width: 40%;
         height: 400px;
+        padding: 0;
     }
+
+    .picto svg, .picto path {
+        transform: scale(0.7);
+        padding-bottom: 0px;
+    }
+
+    .titre-info {
+        font-size: 0.7rem;
+     }
+
     .info-lieu, .info-mail, .info-lieu {
-        padding: 20px 10px;
-        width: 100%;
+        padding: 10px 10px;
+        width: 90%;
         margin-top: 0px;
         margin-left: 20px;
     }
     .perso-infos .socials {
         gap: 30px;
-        margin-right: 20px;
+        margin-right: 0px;
         margin-top: 34px;
     }
     
@@ -271,7 +283,7 @@ input, textarea {
         width: 40px;
     }
     .form-card {
-        width: 40vw;
+        width: 50%;
         height: 400px;
     }
     
@@ -285,12 +297,12 @@ input, textarea {
         font-size: 1.5rem;
     }
     .form-titre {
-        font-size: 1.7rem;
+        font-size: 1.5rem;
         letter-spacing: 0em;
     }
     
     .form-right {
-        width: 100%;
+        width: 30%;
     }
     .contact-form {
         gap: 10px;
@@ -311,52 +323,64 @@ input, textarea {
 }
 
 @media only screen and (max-width: 768px) {
+    body {
+        height: 100%;
+    }
+
     .allContentContact {
-        width: 100vw;
+        width: 100%;
         margin: 0 auto;
         flex-direction: column;
+        height: calc(100% - 80px - 80px);
     }
 
     .perso-infos {
-        width: 550px;
-        height: 210px;
+        width: 450px;
+        height: 160px;
         overflow: hidden;
+        margin-top: 20px;
     }
     
     .info-tel, .info-mail, .info-lieu {
         align-items: center;
         gap: 0px;
         padding: 0px 0px;
-        margin: 0;
+        margin: 0px;
+        width: 100%;
+        height: 40px;
     }
     
     .titre-info {
        flex: 1;
        margin: 0px;
-       font-size: 0.9rem;
+       padding: 0px;
+       font-size: 0.7rem;
     }
     
     .picto {
         flex: 0;
         width: 50px;
-        padding: 0;
-        margin: 0;
+        padding: 0px;
+        margin: 0px;
+        height: 70%;
    }
     
     .info {
         flex: 1;
         text-align: end;
         padding-right: 10px;
+        margin: 0px;
     }
 
     .picto svg, .picto path {
-        transform: scale(0.8);
+        transform: scale(0.7);
         padding-bottom: 0px;
     }
     .perso-infos .socials {
         gap: 40px;
         margin-right: 0px;
-        margin-top: 10px;
+        margin-top: 0px;
+        padding-bottom: 5px;
     }
 
     .perso-infos .socials img {
@@ -365,8 +389,8 @@ input, textarea {
     }
     
     .form-card {
-        width: 550px;
-        height: 400px;
+        width: 450px;
+        height: 380px;
     }
     
     .form-left {
@@ -390,15 +414,15 @@ input, textarea {
         gap: 10px;
         padding: 10px 15px;
         width: 100%;
-        height: 400px;
+        height: 380px;
     }
     textarea {
         min-height: 50px;
-        height: 50px;
+        height: 40px;
         width: 100%;
     }
     .cta {
-        padding: 20px 20px;
+        padding: 10px 20px;
         margin-top: 20px;
         font-size: 1rem;
     }
@@ -416,7 +440,7 @@ input, textarea {
 
     .perso-infos {
         width: 320px;
-        height: 210px;
+        height: 180px;
         overflow: hidden;
     }
     
@@ -439,6 +463,7 @@ input, textarea {
         padding: 0;
         padding-top: 5px;
         margin: 0;
+        height: 45px;
    }
     
     .info {
@@ -455,7 +480,7 @@ input, textarea {
     .perso-infos .socials {
         gap: 40px;
         margin-right: 0px;
-        margin-top: 0px;
+        margin-top: 20px;
     }
 
     .perso-infos .socials img {
@@ -513,7 +538,7 @@ input, textarea {
 
     .perso-infos {
         width: 280px;
-        height: 180px;
+        height: 150px;
         overflow: hidden;
     }
     
@@ -522,7 +547,7 @@ input, textarea {
         gap: 0px;
         padding: 0px 0px;
         margin: 0;
-        height: 40px;
+        height: 30px;
     }
     
     .titre-info {
@@ -537,6 +562,7 @@ input, textarea {
         padding: 0;
         padding-top: 5px;
         margin: 0;
+        height: 45px;
    }
     
     .info {
@@ -563,7 +589,7 @@ input, textarea {
     
     .form-card {
         width: 280px;
-        height: 330px;
+        height: 300px;
     }
     
     .form-left {
@@ -577,7 +603,7 @@ input, textarea {
     
     .form-left h1, .form-left span {
         margin-left: 15px;
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         margin-left: 10px;
     }
     
@@ -592,12 +618,12 @@ input, textarea {
     }
     textarea::placeholder, input::placeholder {
         line-height: 30px;
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
 
     input {
         margin-top: 10px;
-        padding: 5px;
+        padding: 0px;
     }
     textarea {
         min-height: 50px;
