@@ -35,7 +35,7 @@ body::-webkit-scrollbar {
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 95%;
+    width: 100%;
 }
 
 .keyword {
@@ -59,4 +59,10 @@ body::-webkit-scrollbar {
 .keyword:hover::after, a:hover .bento::after {
     width: 100%;
     left: 0;
+}
+
+@media only screen and (max-width: 480px) {
+    .allContentCoding h1 {
+        font-size: 1.5rem;
+    }
 }
