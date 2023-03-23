@@ -430,7 +430,7 @@ input, textarea {
 
 @media only screen and (max-width: 480px) {
     .allContentContact {
-        height: calc(100vh - 80px - 80px);
+        height: calc(100% - 80px - 80px);
         width: 100%;
         margin: 0 auto;
         flex-direction: column;
