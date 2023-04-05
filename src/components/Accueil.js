@@ -5,6 +5,7 @@ import { useDraggable } from '@neodrag/react';
 import sticker from '../medias/sticker.jpg'
 
 
+
 function Accueil() {
 
 const draggableRef = useRef(null);
@@ -39,12 +40,12 @@ new Typewriter(txtAnim, {
                     <img src={profilePicture} alt="Profile"/>
             </div>
             <div className="bio">
-                    <p>
-                        Je suis <span className="txtAnim">développeur web</span>
-                        <br /><br />
-                       Après 5 années dans le domaine de la vidéo, je décide de me reconvertir dans le développement web. Je suis aujourd'hui à la recherche d'une <span className="keyword">alternance</span>.
-                       <br /><br />Vous trouverez tous mes projets professionnels sur ce site.
-                    </p>
+                <p>
+                  Je suis <span className="txtAnim">développeur web</span>
+                  <br /><br />
+                  Après 5 années dans le domaine de la vidéo, je décide de me reconvertir dans le développement web. Je suis aujourd'hui à la recherche d'une <span className="keyword">alternance</span>.
+                  <br /><br />Vous trouverez tous mes projets professionnels sur ce site.
+                </p>
              </div>
         </div>
       <div className='sticker'>

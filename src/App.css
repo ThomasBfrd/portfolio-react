@@ -156,6 +156,10 @@ body::-webkit-scrollbar {
     font-weight: 300;
 }
 
+.stack {
+  font-family: 'Arial', sans-serif !important;
+}
+
 .keyword {
     font-weight: bold;
     position: relative;
