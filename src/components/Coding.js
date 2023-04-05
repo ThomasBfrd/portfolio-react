@@ -4,7 +4,7 @@ import monteurVideo from "../medias/projets/monteur-video.jpg"
 
 function Coding() {
     return (
-        <div class="allContentCoding">
+        <div className="allContentCoding">
             <div className='container'>
                 <div className="card">
                     <div className="card-float">
@@ -14,7 +14,6 @@ function Coding() {
                         <form action="https://thomasbfrd.github.io/itsartegon/" method="get" target="_blank">
                             <button type="submit">Découvrir le projet</button>
                         </form>
-                        <div className="card-overlay"></div>
                         <img src={artegonMusique} alt="" />
                     </div>
                     <div className="card-body">
@@ -31,7 +30,6 @@ function Coding() {
                         {/* <form action="https://thomasbfrd.github.io/itsartegon/" method="get" target="_blank"> */}
                             <button type="submit">Découvrir le projet</button>
                         {/* </form> */}
-                        <div className="card-overlay"></div>
                         <img src={monteurVideo} alt="" />
                     </div>
                     <div className="card-body">

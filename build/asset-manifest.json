@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio-react/static/css/main.e6f4b006.css",
-    "main.js": "/portfolio-react/static/js/main.079e9709.js",
+    "main.css": "/portfolio-react/static/css/main.05b9bd92.css",
+    "main.js": "/portfolio-react/static/js/main.6c7783e3.js",
     "static/media/video8.mp4": "/portfolio-react/static/media/video8.b2aa512d7fbf40a760a1.mp4",
     "static/media/video5.mp4": "/portfolio-react/static/media/video5.4d1bd0179837cb6e83e1.mp4",
     "static/media/video1.mp4": "/portfolio-react/static/media/video1.8cba0ee7d2cdd49a4988.mp4",
@@ -17,7 +17,9 @@
     "static/media/videoVertical2.mp4": "/portfolio-react/static/media/videoVertical2.e8b7214c1c05a1099830.mp4",
     "static/media/video2.mp4": "/portfolio-react/static/media/video2.74fb22e6d47399de5b1d.mp4",
     "static/media/videoVertical1.jpg": "/portfolio-react/static/media/videoVertical1.223b8b3c7576eab87200.jpg",
+    "static/media/monteur-video.jpg": "/portfolio-react/static/media/monteur-video.6540eee60a3fb7a61365.jpg",
     "static/media/video5.webp": "/portfolio-react/static/media/video5.bdf359bc7ab26f3bf14e.webp",
+    "static/media/artegon-musiques.jpg": "/portfolio-react/static/media/artegon-musiques.843c619ed89bc061159d.jpg",
     "static/media/videoVertical3.webp": "/portfolio-react/static/media/videoVertical3.af977ab4164b77891bad.webp",
     "static/media/videoVertical4.webp": "/portfolio-react/static/media/videoVertical4.4522ae3cc8c38007ce78.webp",
     "static/media/video2.webp": "/portfolio-react/static/media/video2.02af233e6ce817f8171f.webp",
@@ -35,11 +37,11 @@
     "static/media/video1.webp": "/portfolio-react/static/media/video1.8aa06ece879f627b7113.webp",
     "static/media/video6.webp": "/portfolio-react/static/media/video6.6acb4debf1c36ae508b3.webp",
     "index.html": "/portfolio-react/index.html",
-    "main.e6f4b006.css.map": "/portfolio-react/static/css/main.e6f4b006.css.map",
-    "main.079e9709.js.map": "/portfolio-react/static/js/main.079e9709.js.map"
+    "main.05b9bd92.css.map": "/portfolio-react/static/css/main.05b9bd92.css.map",
+    "main.6c7783e3.js.map": "/portfolio-react/static/js/main.6c7783e3.js.map"
   },
   "entrypoints": [
-    "static/css/main.e6f4b006.css",
-    "static/js/main.079e9709.js"
+    "static/css/main.05b9bd92.css",
+    "static/js/main.6c7783e3.js"
   ]
 }

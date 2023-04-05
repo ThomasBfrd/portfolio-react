@@ -157,7 +157,36 @@ body::-webkit-scrollbar {
 }
 
 .stack {
-  font-family: 'Arial', sans-serif !important;
+  margin-top: 15px;
+}
+
+.stack h2 {
+  font-size: 1.3rem;
+}
+
+.stack ul {
+  margin-top: 15px;
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.stack .fa-icon {
+  font-size: 2rem;
+}
+
+.stack li img {
+  width: 28px;
+  filter: invert(1);
+  transform: translateX(-6px);
+}
+
+.stack li:hover img {
+  filter: invert(86%) sepia(89%) saturate(474%) hue-rotate(24deg) brightness(102%) contrast(101%);
+}
+
+.stack li:hover {
+  color: greenyellow;
 }
 
 .keyword {
@@ -183,7 +212,7 @@ body::-webkit-scrollbar {
 }
 
 .txtAnim {
-  color: greenyellow;
+  color: #adff2f;
 }
 
 footer {
@@ -397,6 +426,10 @@ footer a:hover .bento::after {
   text-align: center;
 }
 
+.stack ul {
+  justify-content: center;
+}
+
 footer {
   justify-content: center;
   font-size: 0.8rem;
@@ -449,6 +482,14 @@ footer p, footer a {
   font-size: 0.9rem;
 }
 
+.stack {
+  padding-top: 15px;
+  margin: 0 auto;
+}
+.stack .fa-icon {
+  font-size: 1.8rem;
+}
+
 footer {
   justify-content: center;
   font-size: 0.8rem;
@@ -467,13 +508,13 @@ footer p, footer a {
     gap: 25%;
   }
   .textHover {
-    margin-top: 0px;
-    font-size: 1.3rem;
-    line-height: 2.3rem;
+    margin-top: -10px;
+    font-size: 1.0rem;
+    line-height: 2.0rem;
   }
   .bio-pp {
-    height: 150px;
-    width: 150px;
+    height: 120px;
+    width: 120px;
 }
 .containerAccueil {
   gap: 20px;
@@ -488,9 +529,29 @@ footer p, footer a {
   font-size: 0.85rem;
 }
 
+.stack {
+  padding-top: 15px;
+  margin: 0 auto;
+}
+.stack .fa-icon {
+  font-size: 1.6rem;
+}
+
+.stack h2 {
+  font-size: 1.2rem;
+}
+
+.stack ul {
+  gap: 20px;
+}
+
+.stack li img {
+  width: 23px;
+}
+
 footer {
   justify-content: center;
-  font-size: 0.7rem;
+  font-size: 0.6rem;
 }
 
 footer p, footer a {
