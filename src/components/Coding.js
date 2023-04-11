@@ -11,9 +11,11 @@ function Coding() {
                         <p>Site crée avec <span className='keyword-float'>Bootstrap</span> ✌️</p>
                     </div>
                     <div className="card-header">
-                        <form action="https://thomasbfrd.github.io/itsartegon/" method="get" target="_blank">
-                            <button type="submit">Découvrir le projet</button>
-                        </form>
+                        <div>
+                            <a href="https://thomasbfrd.github.io/itsartegon/" target='_blank' rel='noreferrer'>
+                                <button type="submit">Découvrir le projet</button>
+                            </a>
+                        </div>
                         <img src={artegonMusique} alt="" />
                     </div>
                     <div className="card-body">
@@ -27,14 +29,16 @@ function Coding() {
                         <p>Site crée avec <span className='keyword-float'>Tailwind</span> ✌️</p>
                     </div>
                     <div className="card-header">
-                        {/* <form action="https://thomasbfrd.github.io/itsartegon/" method="get" target="_blank"> */}
-                            <button type="submit">Découvrir le projet</button>
-                        {/* </form> */}
+                        <div>
+                            <a href="https://thomasbfrd.github.io/bfrd-videos/" target='_blank' rel='noreferrer'>
+                                <button type="submit">Découvrir le projet</button>
+                            </a>
+                        </div>
                         <img src={monteurVideo} alt="" />
                     </div>
                     <div className="card-body">
                         <h2>Monteur vidéo</h2>
-                        <p>WORK IN PROGRESS</p>
+                        <p>Monteur vidéo professionnel</p>
                     </div>
                 </div>
             </div>
