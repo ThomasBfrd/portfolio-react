@@ -56,7 +56,10 @@ const navbar = [
           <nav ref={navRef} className="nav">
             <ul>
               <li className="nav-btn"><Link onClick={showNavbar} to="/">ACCUEIL</Link></li>
-              {navbar.map((nav) => <li key={nav.url}> <Link to={nav.url} onClick={showNavbar}>{nav.title}</Link> </li>)}
+              {navbar.map((nav) => (
+              <li key={nav.url}> 
+                <Link to={nav.url} onClick={showNavbar}>{nav.title}
+              </Link> </li>))}
             </ul>
             <button className="nav-btn nav-close-btn" onClick={showNavbar}>
               <FaTimes />
