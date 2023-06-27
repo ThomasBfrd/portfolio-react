@@ -49,7 +49,7 @@ function Contact() {
                     </div>
                 </div>
             <div className="socials">
-                <a href="https://linkedin.com/in/thomasbouffard" target="_blank" rel="noreferrer"><img src={linkedin} alt="linkedin"></img></a>
+                <a href="https://linkedin.com/in/bouffardthomas" target="_blank" rel="noreferrer"><img src={linkedin} alt="linkedin"></img></a>
                 <a href="https://github.com/thomasBfrd" target="_blank" rel="noreferrer"><img src={github} alt="github"></img></a>
                 <a href="https://soundcloud.com/artegon" target="_blank" rel="noreferrer"><img src={soundcloud} alt="soundcloud"></img></a>
             </div>
